@@ -74,7 +74,7 @@ class FileCRUDManager extends BaseManager
     }
     if ($isRndName)
     {
-      $rndFileName = Nette\Utils\Strings::random(16, '0-9a-z');
+      $rndFileName = \Nette\Utils\Random::generate(16, '0-9a-z');
     }
     else
     {
