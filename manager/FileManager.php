@@ -14,6 +14,11 @@ class FileManager extends BaseManager
         parent::__construct($database);
     }
 
+    public function getFile($db)
+    {
+        $this->_getFile($db);
+    }
+
     public function _getFile($db)
     {
         if ($db == false)
